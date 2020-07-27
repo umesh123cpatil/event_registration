@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title style="color: red">www.BookConcerts.in</title>
+    <meta charset="windows-1252">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  	<script src="script.js"></script>
+    <style media="screen">
+    html{
+  scroll-behavior: auto;
+  scroll-snap-type: block;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+nav{
+  width: 100%;
+  background: black;
+  overflow:hidden;
+  position: fixed;
+  top: 0;
+}
+nav li a:hover {
+  background-color: white;
+  color: red;
+}
+nav li a:active {
+  background: gold;
+  color: white;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+li{
+  float:left;
+}
+a{
+  padding: 20px;
+  width: 100px
+  display: block;
+  text-decoration: none;
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#section1{
+  height: 700px;
+  background-color:blueviolet;
+  display: inline-block;
+  width: 100%;
+  background-size: 100px 80px;
+  background-repeat: no-repeat;
+}
+#section2{
+  height: 700px;
+  background-color: darkgrey;
+  display: inline-block;
+  width: 100%;
+}
+#section3{
+  height: 700px;
+  background-color:darkturquoise;
+  display: inline-block;
+  width: 100%;
+}
+
+
+h2
+{
+  margin:auto;
+  text-align: center;
+  padding: 0;
+  color: coral;
+  background-color: black;
+  width: 300px;
+}
+#sanam
+{
+  margin:auto;
+  text-align: center;
+  padding: 0;
+background: none;
+  color: white;
+  width: 300px;
+font-size: 50px;
+
+}
+p{
+margin: auto;
+text-align: center;
+font-size: 20px;
+color: beige;
+}
+strong{
+color:darkorange;
+}
+h1{
+
+  text-decoration: underline;
+  color: whitesmoke;
+}
+input{
+border: 2px solid blue;
+border-radius: 4px;
+}
+
+#mov
+{
+  border: 2px solid black;
+  color: saddlebrown;
+  background-color: beige;
+}
+.mov
+{
+  margin-left: 120px;
+  margin-right: 120px
+}
+
+#mov1{
+
+  border: 2px solid black;
+  color: saddlebrown;
+  background-color:bisque;
+
+}
+th{
+  text-align: left;
+  vertical-align: top;
+  padding: 10px;
+  height: 30px;
+  width: 50px;
+
+}
+td{
+  text-align: left;
+  vertical-align: top;
+  padding: 10px;
+  height: 40px;
+}
+img
+{
+  max-width:100%;
+  border-radius: 10px;
+  height: 100;
+  border: 2px solid blue;
+}
+input[type=submit], input[type=reset] {
+background-color: brown;
+border: none;
+color: white;
+padding: 16px 32px;
+text-decoration: none;
+margin: 4px 2px;
+cursor: pointer;
+}
+.sub
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+button
+{
+border-radius: 12px;
+padding: 10px 24px;
+font-size: 15px;
+  text-align: center;
+color: brown;
+}
+.row {
+display: flex;
+
+}
+
+.column {
+flex: 25%;
+padding: 5px;
+
+}
+
+    </style>
+</head>
+<body onload="init()">
+
+    <nav>
+        <ul>
+            <li><a href="#section1">Home</a></li>
+            <li><a href="#section2">Register</a></li>
+            <li><a href="#section3">show_registration</a></li>
+
+        </ul>
+    </nav>
+    <div id="section1">
+    <h1>BookConcerts.in</h1>
+		<br>
+		<div clas="info">
+			<h2 id="sanam"> SANAM </h2>
+			<br><br>
+
+			<p>
+				India's Leading Youtube Sensation To Perform Live Soon!<br> So Do Not wait...book your Tickets Now!!!<br><br>
+				Click On Register Tab above and Book yours Today!!<br><br><strong>Address: Mahalunge Stadium, Balewadi, Pune.<br> Dates: 24<sup>th</sup>, 25<sup>th</sup> and 26<sup>th</sup> July 2020</strong>
+			</p>
+			<br>
+	<div class="row">
+  		<div class="column">
+    		<img src="Sanam-1.jpg"  style="width:80%">
+  		</div>
+  		<div class="column">
+			<img src="Sanam-2.jpg" style="width:80%">
+		</div>
+		  <div class="column">
+    		<img src="sanam-3.jpg" style="width:80%">
+  		</div>
+		<div class="column">
+    		<img src="sanam-4.jpg" style="width:80%">
+  		</div>
+	</div>
+
+</div>
+</div>
+
+<div id="section2">
+    <h1>BookConcerts.in</h1>
+        <h2>Registration Form</h2>
+    <table id="mov1">
+    <tr>
+        <td>
+        <table class="mov" id="mov">
+            <form id="myform" onsubmit="event.preventDefault();" autocomplete="off">
+            <tr>
+                <th><label>Name:</label></th>
+                <th><input type="text" id="fname" name="fname" placeholder="First Name" required></th>
+                <th><input type="text" id="lname" name="lname" placeholder="Last Name" required></th>
+            </tr>
+            <tr>
+                <th> <label>Mobile No: </label></th>
+                <th><input type="text" id="mono" name="mono" placeholder="starting with 0" required></th>
+            </tr>
+            <tr>
+                <th><label>E-mail: </label></th>
+                <th><input type="email" id="email" name="email" placeholder="EX: myname@example.com" required></th>
+            </tr>
+            <tr>
+                <th><label>Seating Options:</label></th>
+                <th><select name="seat" id="seat" required>
+					<option value=""disabled selected hidden>Chose Seat Type</option>
+                    <option value="front-Block">front-Block</option>
+                    <option value="Middle-Block">Middle-Block</option>
+                    <option value="Balcony-Block">Balcony-Block</option>
+                    </select>
+                </th>
+
+                <th><lable>No. of Tickets:</lable></th>
+                <th><input type="number" id="tick" name="tick" min="1" max="5" placeholder="MAX-5" width="50%" required></th>
+            </tr>
+            <tr>
+                <th><lable>Mode of payment:</lable></th>
+                <th>
+                    <input type="radio" id="pay" name="pay" value="UPI" required="required">
+                    <label for="upi">UPI</label><br>
+                    <input type="radio" id="pay" name="pay" value="CARD" required="required">
+                    <label for="CARDS">Credit/Debit Card:</label><br>
+                    <input type="radio" id="pay" name="pay" value="NETB" required="required">
+                    <label for="NETB">NET Banking:</label>
+                </th>
+                </tr>
+                <tr>
+                <th><lable>Day and Date Slot:</lable></th>
+                <th>
+                    <input type="radio" id="day" name="day" value="FRI-24/07/2020" required="required">
+                    <label for="MON">FRI-24/07/2020</label><br>
+                    <input type="radio" id="day" name="day" value="SAT-25/07/2020" required="required">
+                    <label for="TUE">SAT-25/07/2020</label><br>
+                    <input type="radio" id="day" name="day" value="SUN-26/07/2020" required="required">
+                    <label for="SUN">SUN-26/07/2020</label>
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    <input type="checkbox" id="term" name="tems" value="condition" required></th>
+                <th> <label for="terms" size="100"> Agree All terms And Conditions</label><br></th>
+
+            </tr>
+            <tr>
+                <th><button onclick="addHtmlTableRow();"><a>SUBMIT</a></button></th>
+                <th><button onclick="resetForm();">RESET</button></th>
+            </tr>
+            </form>
+        </table>
+
+
+        </td>
+        <td>
+            <img src="seatingPlan.jpg">
+             <h4 style="color: saddlebrown">Note: Refer This Image for Seating Options</h4>
+        </td>
+    </tr>
+    </table>
+</div>
+     <div id="section3" >
+     <h1>BookConcerts.in</h1>
+    <h2> Successful Bookings</h2>
+
+    <table id="table" class="sub" border="1">
+         <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Mobile No.</th>
+            <th>Email</th>
+            <th>Seating Opt.</th>
+            <th>No.of Tickets</th>
+            <th>Mode of Payment</th>
+            <th>day and Date</th >
+        </tr>
+
+    </table>
+    </div>
+
+
+
+</body>
+</html>
